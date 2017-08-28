@@ -1,0 +1,96 @@
+@import "properties";
+
+/*Default*/
+body{
+
+  font-family: $font-roboto;
+  color: $text-color;
+  background: $white;
+  text-transform:inherit;
+}
+
+/*Container properties*/
+div.container{
+  width: 100%;
+  height: 600px;
+}
+
+div.small-container{
+  @extend .container;
+  height: 350px;
+}
+
+div.nav-left-container{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  background: $dark-red;
+  border-right: 2px solid $dark-red;
+}
+
+div.nav-right-container{
+  @extend .nav-left-container;
+  margin-right: 20px;
+  background: none;
+  border: none;
+}
+
+div.left-container{
+  width: 49.4%;
+  height: 83.4%;
+  background: $dark-red;
+}
+
+div.right-container{
+  @extend .left-container;
+  background: none;
+}
+
+div.mini-container{
+  width: 55%;
+  height: 50%;
+  padding: 20px;
+  word-break: break-all;
+  letter-spacing: 2px;
+}
+
+div.landing{
+  width: 100%;
+  height: 100%;
+}
+
+div.socoro{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 30%;
+  filter: opacity(100%);
+}
+
+div.mini-container h3 {font-weight: normal}
+div.mini-container h2 {font-weight: normal}
+
+div.bg-imatge{
+  background-image: url($landing-page-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.icon{margin: 10px; margin-left: 70px}
+.flex{ display: flex; }
+.row { flex-flow: row}
+.last-end { justify-content: flex-end;}
+.nowrap{ flex-wrap: nowrap;}
+.wrap {flex-wrap: wrap;}
+.column { flex-flow: column;}
+.text-center { text-align: center !important; }
+.div-center { align-items: center; justify-content: center;}
+.uppercase{ text-transform: uppercase;}
+.reduce-white { color: $reduce-white}
+.black { color:  $text-color}
+.dark-red { color:  $dark-red}
+.bolder { font-weight: bolder !important;}
+.inline {  display: inline;}
+.font-size-normal{font-size: $font-size-normal !important}
+.font-size-big{font-size: $font-size-big !important}
+.font-size-small{font-size: $font-size-small !important}

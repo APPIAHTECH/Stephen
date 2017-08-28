@@ -1,0 +1,17 @@
+/*Themes Colors*/
+/*Typography*/
+/*ICON*/
+/*nav*/
+div.line {
+  transition: width .5s; }
+
+li:hover > div.line {
+  width: 100%; }
+
+/*button*/
+button.btn-round {
+  transition: all ease-in-out .5s; }
+
+button.btn-round:hover {
+  background: #FDF5F5;
+  color: #34495E; }

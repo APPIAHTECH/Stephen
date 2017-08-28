@@ -1,7 +1,9 @@
-.testing {
-  width: percentage(5/7);
-}
+@import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Slab');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-body{
-  background: white;
-}
+@import "./layout/theme";
+@import "./elements/nav";
+@import "./elements/buttons";
+@import "./animation/transition";

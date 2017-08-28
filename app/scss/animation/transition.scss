@@ -1,0 +1,19 @@
+@import "./../layout/properties.scss";
+
+/*nav*/
+div.line{
+  transition: width .5s;
+}
+li:hover > div.line{
+  width: 100%;
+}
+
+/*button*/
+button.btn-round{
+   transition: all ease-in-out .5s;
+}
+
+button.btn-round:hover{
+  background: $reduce-white;
+  color: $dark-grey;
+}

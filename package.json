@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "start": "gulp default"
+    "start": "gulp default",
+    "push": "git push stephen master",
+    "remote": "git remote add stephen https://github.com/MonsterKrod/Stephen.git"
   },
   "repository": {
     "type": "git",
@@ -33,5 +35,8 @@
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.2",
     "run-sequence": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp-cssnano": "^2.1.2"
   }
 }
