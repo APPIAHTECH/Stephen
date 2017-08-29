@@ -14,3 +14,9 @@ button.btn-round{
    border-radius: 20px;
    outline: none;
 }
+
+button.btn-round-contact{
+  @extend .btn-round;
+  background: $dark-red;
+  border-radius: 50px;
+}

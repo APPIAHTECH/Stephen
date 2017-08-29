@@ -17,3 +17,17 @@ button.btn-round:hover{
   background: $reduce-white;
   color: $dark-grey;
 }
+
+button.btn-round-contact:hover{
+  background: $blue;
+  color: $white;
+}
+
+.small-image-container{
+  transition: all ease .5s;
+}
+
+.small-image-container:hover{
+  cursor: pointer;
+  filter: brightness(50%);
+}

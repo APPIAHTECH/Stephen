@@ -1,7 +1,8 @@
 /*Themes Colors*/
 $dark-red : #EB5255;
-$white : #FAFAFA;
+$white : white;
 $reduce-white : #FDF5F5;
+$blue : #58ADE7;
 $dark-grey : #34495E;
 $text-color : #465A64;
 $button-bg-color : transparent;
@@ -13,10 +14,14 @@ $nav-letter : #455A65;
 $font-roboto : 'Roboto Slab', serif;
 $font-droid : 'Droid Sans', sans-serif;
 
+/*SIZES*/
 $font-size-big : 20pt;
 $font-size-normal : 12pt;
-$font-size-small : 8pt;
+$font-size-small : 10pt;
 
-/*ICON*/
+/*ICON AND IMATGES*/
 $icon : "";
-$landing-page-img : "./../../imatges/img.png";
+$landing-page-img : "./../../imatges/img2.png";
+$taylor : "./../../imatges/img2.png";
+$map  : "./../../imatges/map.png";
+$temp : "https://s.tmimgcdn.com/blog/wp-content/uploads/2010/06/Free-HTML5-Website-Template-for-Design-Company-.jpg?x47994";

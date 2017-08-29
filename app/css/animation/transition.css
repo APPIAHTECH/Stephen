@@ -1,6 +1,7 @@
 /*Themes Colors*/
 /*Typography*/
-/*ICON*/
+/*SIZES*/
+/*ICON AND IMATGES*/
 /*nav*/
 div.line {
   transition: width .5s; }
@@ -15,3 +16,14 @@ button.btn-round {
 button.btn-round:hover {
   background: #FDF5F5;
   color: #34495E; }
+
+button.btn-round-contact:hover {
+  background: #58ADE7;
+  color: white; }
+
+.small-image-container {
+  transition: all ease .5s; }
+
+.small-image-container:hover {
+  cursor: pointer;
+  filter: brightness(50%); }

@@ -4,18 +4,19 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 /*Themes Colors*/
 /*Typography*/
-/*ICON*/
+/*SIZES*/
+/*ICON AND IMATGES*/
 /*Default*/
 body {
   font-family: "Roboto Slab", serif;
   color: #465A64;
-  background: #FAFAFA;
+  background: white;
   text-transform: inherit; }
 
 /*Container properties*/
 div.container, div.small-container {
   width: 100%;
-  height: 600px; }
+  height: 680px; }
 
 div.small-container {
   height: 350px; }
@@ -28,13 +29,12 @@ div.nav-left-container, div.nav-right-container {
   border-right: 2px solid #EB5255; }
 
 div.nav-right-container {
-  margin-right: 20px;
   background: none;
   border: none; }
 
 div.left-container, div.right-container {
-  width: 49.4%;
-  height: 83.4%;
+  width: 50%;
+  height: 100%;
   background: #EB5255; }
 
 div.right-container {
@@ -56,7 +56,21 @@ div.socoro {
   height: 500px;
   position: absolute;
   left: 30%;
+  top: 27%;
   filter: opacity(100%); }
+
+div.top, div.bot {
+  width: 100%;
+  height: 50%; }
+
+div.big-image-container {
+  width: 49.4%;
+  height: 100%; }
+
+div.small-image-container {
+  width: 30%;
+  height: 100%;
+  background: #E6E7EB; }
 
 div.mini-container h3 {
   font-weight: normal; }
@@ -64,11 +78,27 @@ div.mini-container h3 {
 div.mini-container h2 {
   font-weight: normal; }
 
-div.bg-imatge {
-  background-image: url("./../../imatges/img.png");
+div.bg-imatge, div.temp-img, div.map {
+  background-image: url("./../../imatges/img2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
+
+div.temp-img {
+  background-size: cover !important;
+  background-image: url("https://s.tmimgcdn.com/blog/wp-content/uploads/2010/06/Free-HTML5-Website-Template-for-Design-Company-.jpg?x47994") !important;
+  background-repeat: no-repeat !important; }
+
+div.map {
+  background-size: cover !important;
+  background-image: url("./../../imatges/map.png") !important;
+  background-repeat: no-repeat !important; }
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #34495E;
+  box-sizing: content-box; }
 
 .icon {
   margin: 10px;
@@ -111,6 +141,9 @@ div.bg-imatge {
 .dark-red {
   color: #EB5255; }
 
+.bg-dark-red {
+  background: #EB5255 !important; }
+
 .bolder {
   font-weight: bolder !important; }
 
@@ -124,11 +157,34 @@ div.bg-imatge {
   font-size: 20pt !important; }
 
 .font-size-small {
-  font-size: 8pt !important; }
+  font-size: 10pt !important; }
+
+.bg-dark-black {
+  background: #232323 !important;
+  height: 100% !important; }
+
+.remove-bg {
+  background: transparent !important; }
+
+.blue {
+  background: #58ADE7 !important; }
+
+.color-blue {
+  color: #58ADE7 !important; }
+
+.white {
+  background: white !important; }
+
+.opacityLes {
+  filter: opacity(20%); }
+
+p {
+  font-family: "Droid Sans", sans-serif; }
 
 /*Themes Colors*/
 /*Typography*/
-/*ICON*/
+/*SIZES*/
+/*ICON AND IMATGES*/
 nav {
   width: 100%;
   height: 100px;
@@ -156,11 +212,12 @@ div.line {
 
 /*Themes Colors*/
 /*Typography*/
-/*ICON*/
-button.btn-round {
+/*SIZES*/
+/*ICON AND IMATGES*/
+button.btn-round, button.btn-round-contact {
   background-color: transparent;
-  border: solid 2px #FAFAFA;
-  color: #FAFAFA;
+  border: solid 2px white;
+  color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -171,9 +228,14 @@ button.btn-round {
   border-radius: 20px;
   outline: none; }
 
+button.btn-round-contact {
+  background: #EB5255;
+  border-radius: 50px; }
+
 /*Themes Colors*/
 /*Typography*/
-/*ICON*/
+/*SIZES*/
+/*ICON AND IMATGES*/
 /*nav*/
 div.line {
   transition: width .5s; }
@@ -182,9 +244,95 @@ li:hover > div.line {
   width: 100%; }
 
 /*button*/
-button.btn-round {
+button.btn-round, button.btn-round-contact {
   transition: all ease-in-out .5s; }
 
-button.btn-round:hover {
+button.btn-round:hover, button.btn-round-contact:hover {
   background: #FDF5F5;
   color: #34495E; }
+
+button.btn-round-contact:hover {
+  background: #58ADE7;
+  color: white; }
+
+.small-image-container {
+  transition: all ease .5s; }
+
+.small-image-container:hover {
+  cursor: pointer;
+  filter: brightness(50%); }
+
+/*Themes Colors*/
+/*Typography*/
+/*SIZES*/
+/*ICON AND IMATGES*/
+div.contact-container {
+  width: 80%;
+  height: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  z-index: 9999; }
+
+form.contact-form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: white;
+  box-shadow: 5px 5px 5px #888888; }
+
+label {
+  font-size: 10pt;
+  opacity: .8;
+  color: #34495E;
+  font-weight: normal;
+  font-family: "Droid Sans", sans-serif; }
+
+input {
+  width: 80%;
+  padding: 20px;
+  padding-left: 0;
+  border: none;
+  color: black;
+  font-size: 12pt;
+  background: white;
+  height: 1px;
+  background: transparent;
+  border-bottom: solid 2px #F3F4F6;
+  outline: none;
+  display: block;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Droid Sans", sans-serif; }
+
+textarea {
+  display: block;
+  margin-top: 20px;
+  width: 90%; }
+
+.contact-info {
+  width: 95%;
+  height: 100%;
+  padding: 20px;
+  padding-right: 0;
+  background: #34495E;
+  display: block; }
+
+.contact-info i {
+  margin-right: 10px; }
+
+.contact-info h3 {
+  font-weight: normal;
+  text-align: justify !important; }
+
+#marginBot {
+  margin-bottom: 20px; }
+
+#contactLeft {
+  width: 70%; }
+
+#contactRight {
+  width: 30%; }
+
+#posTop {
+  margin-top: 250px; }
