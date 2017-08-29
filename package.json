@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "start": "gulp default",
+    "gulp": "gulp default",
+    "start": "node app.js",
     "push": "git push stephen master",
     "remote": "git remote add stephen https://github.com/MonsterKrod/Stephen.git"
   },
